@@ -1,0 +1,97 @@
+.container {
+    display: grid;
+    min-height: 100px;
+}
+
+/* nav bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 25px;
+}
+.image {
+    flex-grow: 1;
+}
+.title {
+    flex-grow: 3;
+    text-align: center;
+}
+.home {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Blog Post */
+.content {
+    display:grid;
+    grid-gap: 50px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine";
+    justify-content: center;
+}
+.readmore {
+    text-align: center;;
+}
+
+
+
+.card {
+    display: grid;
+    border: #F7C511 solid 2px;
+    padding: 5px 5px;
+    border-radius: 25px;
+    background-color: #4294ED;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/* footer */
+.footer {
+    padding-top: 25px;
+}
+.footer-tag {
+    text-align: center;
+}
+
+@media(max-width:900px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    .image {
+        display: none;
+    }
+    .title {
+        flex-grow: 2;
+        text-align: center;
+    }
+    .home {
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    /* Blog Post */
+    .content {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
+        justify-content: center;
+    } 
+    
+    .card {
+        box-shadow: none;
+    }
+  }
