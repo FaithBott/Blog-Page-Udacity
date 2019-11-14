@@ -1,0 +1,19 @@
+/* nav bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 25px;
+}
+.image {
+    flex-grow: 1;
+}
+.title {
+    flex-grow: 3;
+    text-align: center;
+}
+.home {
+    flex-grow: 1;
+    text-align: center;
+}

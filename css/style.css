@@ -1,27 +1,14 @@
+@import url("./blog-page.css");
+@import url("./navbar.css");
+@import url("./footer.css");
+
 .container {
     display: grid;
     min-height: 100px;
 }
 
 /* nav bar */
-.navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 100px;
-    margin-bottom: 25px;
-}
-.image {
-    flex-grow: 1;
-}
-.title {
-    flex-grow: 3;
-    text-align: center;
-}
-.home {
-    flex-grow: 1;
-    text-align: center;
-}
+
 
 /* Blog Post */
 .content {
@@ -48,14 +35,6 @@
     background-color: #4294ED;
     color: white;
     box-shadow: 10px 10px 5px grey;
-}
-
-/* footer */
-.footer {
-    padding-top: 25px;
-}
-.footer-tag {
-    text-align: center;
 }
 
 @media(max-width:900px) {

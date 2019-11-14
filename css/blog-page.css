@@ -1,43 +1,15 @@
-/* nav bar */
-.navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 100px;
-    margin-bottom: 25px
-}
-.image {
-    flex-grow: 1;
-}
-.title {
-    flex-grow: 3;
-    text-align: center;
-}
-.home {
-    flex-grow: 1;
-    text-align: center;
-}
-.name {
-    margin: 0;
-    padding-left: 5px; 
-}
+@import url("./navbar.css");
+@import url("./footer.css");
 
 /* content */
 .author {
     display: flex;
     flex-direction: row;
 }
-
-/* footer */
-.footer {
-    padding-top: 25px;
-}
-.footer-tag {
-    text-align: center;
-}
-blockquote {
+figcaption {
     color: #DB0000
 }
+
 
 
 @media(max-width:900px) {
